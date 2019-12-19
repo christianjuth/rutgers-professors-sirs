@@ -112,7 +112,7 @@ function App() {
         
       </Header>
       <Footer>
-        <MutedText>(color -> rating AND width -> number of ratings)</MutedText>
+        <MutedText>(color -> rating)</MutedText>
       </Footer>
       {sortedData.map((prof, i) => (
         <Row 
