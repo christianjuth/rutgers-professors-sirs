@@ -34,6 +34,10 @@ const HeaderSpacer = styled.div`
   height: 50px;
 `;
 
+const TextSpacer = styled.div`
+  width: 10px;
+`;
+
 const Footer = styled.div`
   position: fixed;
   background-color: #fff;
@@ -97,7 +101,9 @@ function App() {
     <Container>
       <HeaderSpacer/>
       <Header>
-        Sort:
+        <b>SIRS</b>
+        <TextSpacer/>
+        sort:
         <select onChange={e => setSortType(e.target.value)}>
           {sortOptions.map(option => (
             <option key={option} value={option}>{option}</option>
